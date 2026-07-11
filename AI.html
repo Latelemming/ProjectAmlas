@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student AI Assistant</title>
+    <link rel="stylesheet" href="AI-style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <div class="app-card">
+            <div class="header">
+                <div class="brand-block">
+                    <div class="brand-badge"><img src="Logo.png" alt="Brand Icon"></div>
+                    <div>
+                        <h2><strong>MYRA</strong><br><span>Study Assistant</span></h2>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button id="clear-history-btn" type="button">Clear History</button>
+                </div>
+                <p class="subtitle">What are we Studying today?!</p>
+            </div>
+
+            <div id="chatbox" class="chatbox" aria-live="polite"></div>
+
+            <div class="composer">
+                <input type="text" id="user-input" placeholder="Ask a homework question...">
+                <button id="send-btn" type="button">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="AI-script.js"></script>
+</body>
+</html>
